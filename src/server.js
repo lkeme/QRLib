@@ -10,8 +10,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Configuration: WebUI Switch (Default: true)
-// const webUiEnabled = process.env.WEBUI_ENABLED !== 'false';
-const webUiEnabled = false;
+const webUiEnabled = process.env.WEBUI_ENABLED !== 'false';
+// const webUiEnabled = false;
 
 if (webUiEnabled) {
     // Serve static files for WebUI
